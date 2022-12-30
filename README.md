@@ -15,7 +15,7 @@ $ composer require aliromero/laravel-perfectmoney
 
 Publish Configuration file
 ```
-php artisan vendor:publish --provider="Adisaf\LaravelPerfectMoney\ServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Romero\LaravelPerfectMoney\ServiceProvider" --tag="config"
 ```
 
 Edit .env
@@ -42,7 +42,7 @@ If you want to customize form, follow these steps.
 
 ### 1.Publish view
 ```
-php artisan vendor:publish --provider="Adisaf\LaravelPerfectMoney\ServiceProvider" --tag="views"
+php artisan vendor:publish --provider="Romero\LaravelPerfectMoney\ServiceProvider" --tag="views"
 ```
 ### 2.Edit your view at /resources/views/vendor/perfectmoney/perfectmoney.php
 
@@ -108,11 +108,11 @@ If you discover any security related issues, please email adisa.fawaz@gmail.com 
 
 The MIT License (MIT). Please see [License File](LICENSE) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/adisaf/laravel-perfectmoney.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/aliromero/laravel-perfectmoney.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/adisaf/laravel-perfectmoney.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/aliromero/laravel-perfectmoney.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/adisaf/laravel-perfectmoney
-[link-downloads]: https://packagist.org/packages/adisaf/laravel-perfectmoney
-[link-author]: https://github.com/Adisaf
+[link-packagist]: https://packagist.org/packages/aliromero/laravel-perfectmoney
+[link-downloads]: https://packagist.org/packages/aliromero/laravel-perfectmoney
+[link-author]: https://github.com/aliromero
 [link-contributors]: ../../contributors
