@@ -15,7 +15,7 @@ $ composer require aliromero/laravel-perfectmoney
 
 Publish Configuration file
 ```
-php artisan vendor:publish --provider="Romero\LaravelPerfectMoney\ServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Romero\PerfectMoney\ServiceProvider" --tag="perfectmoney-config"
 ```
 
 Edit .env
