@@ -42,7 +42,7 @@ If you want to customize form, follow these steps.
 
 ### 1.Publish view
 ```
-php artisan vendor:publish --provider="Romero\LaravelPerfectMoney\ServiceProvider" --tag="views"
+php artisan vendor:publish --provider="Romero\PerfectMoney\ServiceProvider" --tag="perfectmoney-view"
 ```
 ### 2.Edit your view at /resources/views/vendor/perfectmoney/perfectmoney.php
 
