@@ -27,12 +27,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Adisaf\\PerfectMoney\\": "src/"
+      "Romero\\PerfectMoney\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Adisaf\\PerfectMoney\\Tests\\": "tests"
+      "Romero\\PerfectMoney\\Tests\\": "tests"
     }
   },
   "minimum-stability": "dev",
