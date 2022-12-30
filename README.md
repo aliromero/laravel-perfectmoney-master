@@ -9,7 +9,7 @@
 Via Composer
 
 ``` bash
-$ composer require adisaf/laravel-perfectmoney
+$ composer require aliromero/laravel-perfectmoney
 ```
 ##Configuration
 
