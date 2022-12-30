@@ -54,7 +54,7 @@ class PerfectMoney
     {
 
         // Get data from the server
-        $url = file_get_contents('https://perfectmoney.is/acct/balance.asp?AccountID=' . $this->account_id . '&PassPhrase=' . $this->passphrase, false, stream_context_create($this->ssl_fix));
+        $url = file_get_contents('https://perfectmoney.com/acct/balance.asp?AccountID=' . $this->account_id . '&PassPhrase=' . $this->passphrase, false, stream_context_create($this->ssl_fix));
         if (!$url) {
             return ['status' => 'error', 'message' => 'Connection error'];
         }
