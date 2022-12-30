@@ -96,7 +96,7 @@ class PerfectMoney
     {
 
         // trying to open URL to process PerfectMoney Spend request
-        $url = file_get_contents('https://perfectmoney.is/acct/confirm.asp?AccountID=' . urlencode(trim($this->account_id)) . '&PassPhrase=' . urlencode(trim($this->passphrase)) . '&Payer_Account=' . urlencode(trim($this->marchant_id)) . '&Payee_Account=' . urlencode(trim($account)) . '&Amount=' . $amount . (empty($descripion) ? '' : '&Memo=' . urlencode(trim($descripion))) . (empty($payment_id) ? '' : '&PAYMENT_ID=' . urlencode(trim($payment_id))), false, stream_context_create($this->ssl_fix));
+        $url = file_get_contents('https://perfectmoney.com/acct/confirm.asp?AccountID=' . urlencode(trim($this->account_id)) . '&PassPhrase=' . urlencode(trim($this->passphrase)) . '&Payer_Account=' . urlencode(trim($this->marchant_id)) . '&Payee_Account=' . urlencode(trim($account)) . '&Amount=' . $amount . (empty($descripion) ? '' : '&Memo=' . urlencode(trim($descripion))) . (empty($payment_id) ? '' : '&PAYMENT_ID=' . urlencode(trim($payment_id))), false, stream_context_create($this->ssl_fix));
 
         if (!$url) {
             return ['status' => 'error', 'message' => 'Connection error'];
@@ -167,13 +167,13 @@ class PerfectMoney
         }
 
         // Custom view
-        if (view()->exists('laravelperfectmoney::' . $view)) {
-            return view('laravelperfectmoney::' . $view, $view_data);
+        if (view()->exists('perfectmoney::' . $view)) {
+            return view('perfectmoney::' . $view, $view_data);
         }
 
 
         // Default view
-        return view('laravelperfectmoney::perfectmoney', $view_data);
+        return view('perfectmoney::perfectmoney', $view_data);
     }
 
 
@@ -200,7 +200,7 @@ class PerfectMoney
         $end_year = ($end_year ? $end_year : Carbon::now()->year);
 
 
-        $url = 'https://perfectmoney.is/acct/historycsv.asp?startmonth=' . $start_month . '&startday=' . $start_day . '&startyear=' . $start_year . '&endmonth=' . $end_month . '&endday=' . $end_day . '&endyear=' . $end_year . '&AccountID=' . urlencode(trim($this->account_id)) . '&PassPhrase=' . urlencode(trim($this->passphrase));
+        $url = 'https://perfectmoney.com/acct/historycsv.asp?startmonth=' . $start_month . '&startday=' . $start_day . '&startyear=' . $start_year . '&endmonth=' . $end_month . '&endday=' . $end_day . '&endyear=' . $end_year . '&AccountID=' . urlencode(trim($this->account_id)) . '&PassPhrase=' . urlencode(trim($this->passphrase));
 
         // Custom Filters
         if (isset($data['payment_id'])) {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Romero\PerfectMoney;
+namespace Adisaf\PerfectMoney;
 
 /**
- * @see \Adisaf\PerfectMoney\PerfectMoney
+ * @see \Romero\PerfectMoney\PerfectMoney
  */
 class Facade extends \Illuminate\Support\Facades\Facade
 {
