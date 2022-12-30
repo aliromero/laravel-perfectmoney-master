@@ -1,6 +1,6 @@
 <?php
 
-namespace Adisaf\PerfectMoney;
+namespace Romero\PerfectMoney;
 
 /**
  * @see \Adisaf\PerfectMoney\PerfectMoney

@@ -1,6 +1,6 @@
 <?php
 
-namespace Adisaf\PerfectMoney;
+namespace Romero\PerfectMoney;
 
 use Carbon\Carbon;
 use Illuminate\Http\Request;

@@ -1,6 +1,6 @@
 {
   "name": "adisaf/laravel-perfectmoney",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "PHP PerfectMoney integration for Laravel",
   "keywords": [
     "laravel",
@@ -11,8 +11,8 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Fawaz ADISA",
-      "email": "adisa.fawaz@gmail.com"
+      "name": "Ali Romero",
+      "email": "ali.rom3ro@gmail.com"
     }
   ],
   "require": {
@@ -40,10 +40,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Adisaf\\PerfectMoney\\ServiceProvider"
+        "Romero\\PerfectMoney\\ServiceProvider"
       ],
       "aliases": {
-        "PerfectMoney": "Adisaf\\PerfectMoney\\Facade"
+        "PerfectMoney": "Romero\\PerfectMoney\\Facade"
       }
     }
   },
