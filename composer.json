@@ -1,6 +1,6 @@
 {
   "name": "aliromero/laravel-perfectmoney",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "PHP PerfectMoney integration for Laravel",
   "keywords": [
     "laravel",
@@ -17,12 +17,12 @@
   ],
   "require": {
     "php": ">=8.0",
-    "illuminate/support": "^6|^7|^8|^9",
+    "illuminate/support": "^6|^7|^8|^9|^10",
     "nesbot/carbon": "^1.0|^2.0"
   },
   "require-dev": {
     "orchestra/testbench": "^3.5.11|^4.0|^5.0",
-    "phpunit/phpunit": "^6.0|^7.0|^8.5|^9.0",
+    "phpunit/phpunit": "^6.0|^7.0|^8.5|^9.0|^10.0",
     "squizlabs/php_codesniffer": "^3.5"
   },
   "autoload": {
